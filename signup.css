@@ -1,0 +1,130 @@
+/* Background setup */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #142930;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Main container */
+.main {
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+}
+
+/* Card styling */
+.card {
+  background: #fce8d8;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  overflow: hidden;
+  animation: fadeIn 0.8s ease;
+}
+
+.card-content {
+  padding: 40px;
+}
+
+.welcome {
+  text-align: center;
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.title {
+  text-align: center;
+  color: #333;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* Form */
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 15px;
+  transition: border 0.3s;
+}
+
+input:focus {
+  border-color: #142930;
+}
+
+/* Forgot link */
+.forgot {
+  text-align: right;
+  margin-top: 6px;
+}
+
+.forgot a {
+  color: #142930;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.forgot a:hover {
+  text-decoration: underline;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  background: #142930;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #1d3b45;
+}
+
+/* Login text */
+.login-text {
+  text-align: center;
+  color: #555;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.login-text a {
+  color: #142930;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-text a:hover {
+  text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}

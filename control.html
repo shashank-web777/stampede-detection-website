@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multi-Cam Control Panel</title>
+  <link rel="stylesheet" href="control.css" />
+  <script src="control.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Multi-Cam Control Panel (Preview)</h1>
+    <div class="grid">
+      <!-- 6 Camera Boxes -->
+      <div class="camera-box" id="cam1">
+        <div class="cam-header">
+          <span>Camera 1</span>
+          <span class="panel-text">Panel</span>
+        </div>
+        <div class="cam-body">
+          <video id="video1" autoplay muted playsinline></video>
+          <div class="info top-left" id="people1">People: 0</div>
+          <div class="info top-right risk low" id="risk1">Risk: Low</div>
+          <div class="controls">
+            <label class="upload">
+              Upload
+              <input type="file" hidden />
+            </label>
+            <button onclick="toggleCam(1)" class="mode-btn" id="mode1">Live</button>
+            <div class="density-box">
+              <span>Density</span>
+              <input type="number" id="density1" min="0" max="100" value="50" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat 5 more -->
+      <div class="camera-box" id="cam2">
+        <div class="cam-header"><span>Camera 2</span><span class="panel-text">Panel</span></div>
+        <div class="cam-body">
+          <video id="video2" autoplay muted playsinline></video>
+          <div class="info top-left" id="people2">People: 0</div>
+          <div class="info top-right risk low" id="risk2">Risk: Low</div>
+          <div class="controls">
+            <label class="upload">Upload<input type="file" hidden /></label>
+            <button onclick="toggleCam(2)" class="mode-btn" id="mode2">Live</button>
+            <div class="density-box"><span>Density</span><input type="number" id="density2" min="0" max="100" value="50" /></div>
+          </div>
+        </div>
+      </div>
+      <div class="camera-box" id="cam3">
+        <div class="cam-header"><span>Camera 3</span><span class="panel-text">Panel</span></div>
+        <div class="cam-body">
+          <video id="video3" autoplay muted playsinline></video>
+          <div class="info top-left" id="people3">People: 0</div>
+          <div class="info top-right risk low" id="risk3">Risk: Low</div>
+          <div class="controls">
+            <label class="upload">Upload<input type="file" hidden /></label>
+            <button onclick="toggleCam(3)" class="mode-btn" id="mode3">Live</button>
+            <div class="density-box"><span>Density</span><input type="number" id="density3" min="0" max="100" value="50" /></div>
+          </div>
+        </div>
+      </div>
+      <div class="camera-box" id="cam4">
+        <div class="cam-header"><span>Camera 4</span><span class="panel-text">Panel</span></div>
+        <div class="cam-body">
+          <video id="video4" autoplay muted playsinline></video>
+          <div class="info top-left" id="people4">People: 0</div>
+          <div class="info top-right risk low" id="risk4">Risk: Low</div>
+          <div class="controls">
+            <label class="upload">Upload<input type="file" hidden /></label>
+            <button onclick="toggleCam(4)" class="mode-btn" id="mode4">Live</button>
+            <div class="density-box"><span>Density</span><input type="number" id="density4" min="0" max="100" value="50" /></div>
+          </div>
+        </div>
+      </div>
+      <div class="camera-box" id="cam5">
+        <div class="cam-header"><span>Camera 5</span><span class="panel-text">Panel</span></div>
+        <div class="cam-body">
+          <video id="video5" autoplay muted playsinline></video>
+          <div class="info top-left" id="people5">People: 0</div>
+          <div class="info top-right risk low" id="risk5">Risk: Low</div>
+          <div class="controls">
+            <label class="upload">Upload<input type="file" hidden /></label>
+            <button onclick="toggleCam(5)" class="mode-btn" id="mode5">Live</button>
+            <div class="density-box"><span>Density</span><input type="number" id="density5" min="0" max="100" value="50" /></div>
+          </div>
+        </div>
+      </div>
+      <div class="camera-box" id="cam6">
+        <div class="cam-header"><span>Camera 6</span><span class="panel-text">Panel</span></div>
+        <div class="cam-body">
+          <video id="video6" autoplay muted playsinline></video>
+          <div class="info top-left" id="people6">People: 0</div>
+          <div class="info top-right risk low" id="risk6">Risk: Low</div>
+          <div class="controls">
+            <label class="upload">Upload<input type="file" hidden /></label>
+            <button onclick="toggleCam(6)" class="mode-btn" id="mode6">Live</button>
+            <div class="density-box"><span>Density</span><input type="number" id="density6" min="0" max="100" value="50" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
